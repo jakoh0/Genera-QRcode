@@ -1,0 +1,79 @@
+/* Resetta alcune impostazioni predefinite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Background scuro */
+    color: #E0E0E0; /* Testo chiaro per contrastare il fondo scuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Titolo */
+h1 {
+    color: #4CAF50; /* Verde brillante per il titolo */
+    margin-bottom: 20px;
+}
+
+/* Etichetta per il campo di input */
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #E0E0E0; /* Colore del testo chiaro */
+}
+
+/* Input per il link */
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #444; /* Bordo più scuro */
+    border-radius: 5px;
+    background-color: #333; /* Background più scuro per l'input */
+    color: #E0E0E0; /* Testo chiaro all'interno dell'input */
+    font-size: 16px;
+}
+
+/* Focus sul campo di input */
+input[type="text"]:focus {
+    border-color: #4CAF50; /* Colore verde quando si clicca sull'input */
+    outline: none;
+}
+
+/* Pulsante per generare il QR code */
+button {
+    background-color: #4CAF50; /* Verde per il pulsante */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio colore del pulsante al passaggio del mouse */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Div dove sarà generato il QR code */
+#qrcode {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Stile per il canvas */
+canvas {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
